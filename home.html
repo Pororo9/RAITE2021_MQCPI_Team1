@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Course List</title>
+ <!-- bootstrap CSS -->
+<link href="app/assets/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- custom CSS -->
+ <link href="app/assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Static navbar -->
+<aside>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" datatarget="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+       
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariaexpanded="false">Course<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="#" id='read-course' class='read-course-button'>Course List</a></li>
+        <li><a href="#" id='create-course' class='create-course-button'>Add New Course</a></li>
+       </ul>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariaexpanded="false">Student<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="#" id='read-student' class='read-students-button'>Student List</a></li>
+        <li><a href="#" id='create-student' class='create-student-button'>Add New Student</a></li> </ul>
+        </li>
+        <!-- Dropdown menu for faculty -->
+       <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Employees<span class="caret"></span></a>
+       <ul class="dropdown-menu" role="menu">
+       <li><a href="#" id='read-faculty' class='read-faculty-button'>Employee List</a></li>
+       <li><a href="#" id='create-faculty' class='create-faculty-button'>Add New Employee</a></li>
+       </ul>
+       </li>
+       
+       <!-- Dropdown menu for department -->
+       <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Department<span class="caret"></span></a>
+       <ul class="dropdown-menu" role="menu">
+       <li><a href="#" id='read-department' class='read-department-button'>Department List</a></li>
+       <li><a href="#" id='create-department' class='create-department-button'>Add New Department</a></li>
+       </ul>
+       </li>
+        <li><a href="#">Menu 1</a></li>
+       
+        <li><a href="#">Menu 2</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id='logout-user' class='logout-user-button'>Log-Out</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+        </nav>
+</aside>
+
+<!-- our app will be injected here -->
+<div id="app"></div>
+
+<!-- jQuery library -->
+<script src="app/assets/js/jquery.js"></script>
+<!-- bootstrap JavaScript -->
+<script src="app/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- bootbox for confirm pop up -->
+<script src="app/assets/js/bootbox.min.js"></script>
+<!-- app js script -->
+<script src="app/app.js"></script>
+<script src="app/logout.js"></script>
+
+<!-- course scripts -->
+<script src="app/course/read-course.js"></script>
+<script src="app/course/create-course.js"></script>
+<script src="app/course/read-one-course.js"></script>
+<script src="app/course/update-course.js"></script>
+<script src="app/course/delete-course.js"></script>
+<script src="app/course/course.js"></script>
+<script src="app/course/search-course.js"></script>
+
+<!-- student javascript files here -->
+<script src="app/students/read-students.js"></script>
+<script src="app/students/create-student.js"></script>
+<script src="app/students/read-one-student.js"></script>
+<script src="app/students/update-student.js"></script>
+<script src="app/students/delete-student.js"></script>
+<script src="app/students/students.js"></script>
+<script src="app/students/search-student.js"></script>
+
+<!-- add department javascript files here -->
+<script src="app/department/read-department.js"></script>
+<script src="app/department/create-department.js"></script>
+<script src="app/department/read-one-department.js"></script>
+<script src="app/department/update-department.js"></script>
+<script src="app/department/delete-department.js"></script>
+<script src="app/department/department.js"></script>
+<script src="app/department/search-department.js"></script>
+
+<!-- add faculty javascript files here -->
+<script src="app/faculty/read-faculty.js"></script>
+<script src="app/faculty/create-faculty.js"></script>
+<script src="app/faculty/read-one-faculty.js"></script>
+<script src="app/faculty/update-faculty.js"></script>
+<script src="app/faculty/delete-faculty.js"></script>
+<script src="app/faculty/faculty.js"></script>
+<script src="app/faculty/search-faculty.js"></script>
+
+
+
+</body>
+</html>
